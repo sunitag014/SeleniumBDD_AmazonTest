@@ -1,0 +1,4 @@
+$(document).ready(function() {
+CucumberHTML.timelineItems.pushArray([{"id":"82c48648-f8ad-40f0-8409-55e3cceb667f","feature":"AmazonTest","scenario":"Adding two items in Cart and verifying sub total","start":1717011165933,"group":1,"content":"","tags":"","end":1717011190796,"className":"passed"},{"id":"332c3e75-d9de-4876-ad17-d7271946782d","feature":"AmazonTest","scenario":"Adding a “Monitor” Item in Cart and verifying sub total","start":1717011124209,"group":1,"content":"","tags":"","end":1717011147839,"className":"passed"},{"id":"92d0c6f0-80ff-441f-9ba6-29ecc8fc608e","feature":"AmazonTest","scenario":"Adding a “Laptop” Item in Cart and verifying sub total","start":1717011147861,"group":1,"content":"","tags":"","end":1717011165919,"className":"passed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":1,"content":"Thread[main,5,main]"}]);
+});

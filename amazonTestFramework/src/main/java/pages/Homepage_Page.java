@@ -55,12 +55,17 @@ Thread.sleep(3000);
 
     public void priceOfOnProductPage(String index)
     {
-        WebElement priceForFirstItem = BaseClass.driver.findElement(By.xpath("(//span[@class='a-price-whole'])[" + index + "]"));
+        price =null;
+        WebElement priceForFirstItem = BaseClass.driver.findElement(By.xpath("(//span[@class='a-price'])[" + index + "]"));
         price= priceForFirstItem.getText();
         price=price.concat(".00");
+        price=price.substring(1);
         WebElement subTotalOnProductPage = BaseClass.driver.findElement(By.xpath("//span[@class='ewc-subtotal-amount']"));
         subTotalOnProductPagePrice= subTotalOnProductPage.getText();
         subTotalOnProductPagePrice=subTotalOnProductPagePrice.trim();
+        System.out.println("Price : " +price);
+        System.out.println("subTotalOnProductPagePrice:"+subTotalOnProductPagePrice);
+
     }
     public void clickOnCartButton()
     {
@@ -77,6 +82,10 @@ Thread.sleep(3000);
         WebElement priceOfProduct = BaseClass.driver.findElement(By.xpath("//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold']"));
         priceOfProductOnCartPage= priceOfProduct.getText();
         priceOfProductOnCartPage=priceOfProductOnCartPage.trim();
+
+        System.out.println("subTotalOnCartPage: " +subTotalOnCartPage);
+        System.out.println("priceOfProductOnCartPage: " +priceOfProductOnCartPage);
+
     }
 
 
